@@ -1,0 +1,43 @@
+@media only screen and (max-width: 600px) {
+   
+/* about */
+.about {
+   text-align: center;
+   padding: 3rem;
+}
+
+.icon p{
+    padding-bottom: 2rem;
+ }
+
+ .services p{
+   text-align: center;
+ }
+
+ .mx-10{
+margin: 0;
+
+}
+.services .column {
+  margin-bottom: 2rem;
+}
+
+.contact-details .col-md-6 {
+  padding-bottom: 3rem;
+}
+.form {
+  
+   padding: 0;
+}
+.social-media{
+   padding-top: 3rem;
+}
+
+.footer{
+   text-align: center;
+}
+
+.mb-10{
+   margin-bottom: 1.5rem;
+}
+  }

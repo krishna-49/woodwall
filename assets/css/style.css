@@ -1,0 +1,388 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    ;
+}
+
+body {
+    background-color: #ffeee4;
+    overflow-x: hidden;
+}
+
+
+
+/* navbar */
+.navbar {
+    padding-top: 2rem;
+}
+
+.logo {
+    text-decoration: none;
+    color: #cf8b64;
+    font-size: 1.5rem;
+}
+
+.logo-s {
+    color: #692705;
+}
+
+
+/* carousel */
+
+section {
+    height: 40rem;
+    width: 100%;
+    background: linear-gradient(rgb(252, 239, 229) 0%, rgba(0, 0, 0, 0.2) 80%), url(/assets/img/hero-img.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+
+}
+
+section .container {
+    background-color: #ffeee4;
+    overflow: hidden;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+
+.text {
+    position: relative;
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: bolder;
+    color: #692705;
+}
+
+.text-second::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+
+    background-color: #ffeee4;
+    border-left: 2px solid #343a40;
+    animation: animate 4s steps(12) infinite;
+}
+
+@keyframes animate {
+
+    40%,
+    60% {
+        left: 100%;
+    }
+
+    100% {
+        left: 0%;
+    }
+}
+
+.btn2 {
+    background-color: #cf8b64;
+    color: #ffeee4;
+    border-radius: 0;
+}
+
+.btn2:hover {
+    background-color: #692705;
+    color: #ffeee4;
+}
+
+
+/* about */
+.about {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+}
+
+.icon {
+    position: relative;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+}
+
+.icon i {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #ffeee4;
+    background-color: #cf8b64;
+    border-radius: 100%;
+    padding: 2rem;
+}
+
+.icon h4 {
+    font-weight: bolder;
+}
+
+
+/* services */
+
+.services {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+}
+
+.services h6 {
+    color: #692705;
+    border-bottom: 1px solid #cf8b64;
+    padding: 0.5rem 1.5rem;
+    width: fit-content;
+}
+
+
+.services h1 {
+    font-weight: bolder;
+    padding: 0.5rem;
+}
+
+.services p {
+    letter-spacing: 3px;
+}
+
+.services .card {
+    width: 100%;
+    height: 100%;
+}
+
+.services .card-text {
+    letter-spacing: 0;
+}
+
+.mx-10 {
+    margin-left: 8rem;
+    margin-right: 8rem;
+}
+
+.column .card-body h4 {
+    font-weight: bold;
+    color: #692705;
+}
+
+.column .card-body p {
+    font-size: 0.9rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #692705;
+}
+
+.column .card-body a {
+    color: #cf8b64;
+    text-decoration: none;
+    padding: 0.3rem 0.8rem;
+}
+
+.column .card-body a:hover {
+    background-color: #692705;
+    color: #ffeee4;
+}
+
+
+/* counter */
+
+.M-counter {
+    background-color: #cf8b64;
+    width: 100%;
+    height: 100%;
+    padding: 4rem 6rem;
+}
+
+.M-counter .row {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.M-counter .row .col {
+    flex-basis: 22%;
+    text-align: center;
+    color: #ffeee4;
+}
+
+.counter-box {
+    width: 100%;
+    height: 100%;
+    padding: 20px 0;
+}
+
+.counter-box i {
+    font-size: 2rem;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    background-color: #692705;
+}
+
+
+/* contact */
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+}
+
+.contact h6 {
+    color: #692705;
+    border-bottom: 1px solid #cf8b64;
+    padding: 0.5rem 1.5rem;
+    width: fit-content;
+}
+
+
+.contact h1 {
+    font-weight: bolder;
+    padding: 0.5rem;
+}
+
+.contact a {
+    letter-spacing: 3px;
+    color: #cf8b64;
+    text-decoration: none;
+    padding: 0.3rem 0.8rem;
+}
+
+
+.contact-details {
+    width: 100%;
+    height: 100%;
+    margin-top: 3rem;
+    padding: 2rem;
+}
+
+.contact-details .col-md-6 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.fa-phone {
+    font-size: 2rem;
+    padding: 1.5rem;
+    color: #ffeee4;
+    background-color: #692705;
+    margin-right: 1rem;
+}
+
+.small-d {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.fa-location-crosshairs {
+    font-size: 2rem;
+    padding: 1.5rem;
+    color: #ffeee4;
+    background-color: #692705;
+    margin-left: 1rem;
+}
+
+.small-d2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: right;
+}
+
+.form {
+    width: 100%;
+    padding: 2rem;
+}
+
+.form input {
+    background-color: #ffeee4;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 1rem;
+    padding: 1rem 1rem;
+    box-shadow: none !important;
+}
+
+.form textarea {
+    background-color: #ffeee4;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 1rem;
+    padding: 1rem 1rem;
+    box-shadow: none !important;
+}
+
+.social-media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.social-media i {
+    width: fit-content;
+    background-color: #cf8b64;
+    color: #ffeee4;
+    padding: 1.5rem;
+    border-radius: 100%;
+    margin-left: 0.5rem;
+    
+}
+
+.social-media i:hover {
+    background-color: #692705;
+    color: #ffeee4;
+
+    border-radius: 100%;
+}
+
+
+
+/* footer */
+.footer{
+    padding: 5rem;
+}
+.footer .f-part1{
+    padding: 2rem;
+}
+
+.f-part1 h4{
+    font-weight: 900;
+    color: #692705;
+}
+.f-part1 p{
+   padding-top: 0.4rem;
+   font-size: 0.9rem;
+}
+
+.footer .f-part2{
+    padding: 2rem;
+}
+
+.f-part2 h4{
+    font-weight: 900;
+    color: #692705;
+}
+.f-part2 a{
+    padding-bottom: 0.3rem;
+    text-decoration: none;
+    color: #343a40;
+    font-size: 0.9rem;
+}
