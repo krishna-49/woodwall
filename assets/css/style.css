@@ -6,16 +6,24 @@
     ;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #ffeee4;
     overflow-x: hidden;
 }
 
 
-
 /* navbar */
 .navbar {
-    padding-top: 2rem;
+    padding-top: -1rem;
+    background-color: #ffeee4;
+}
+
+.navbar-nav a:hover {
+    color: #cf8b64 !important;
 }
 
 .logo {
@@ -70,7 +78,6 @@ section .container {
     left: 0;
     height: 100%;
     width: 100%;
-
     background-color: #ffeee4;
     border-left: 2px solid #343a40;
     animation: animate 4s steps(12) infinite;
@@ -343,7 +350,7 @@ section .container {
     padding: 1.5rem;
     border-radius: 100%;
     margin-left: 0.5rem;
-    
+
 }
 
 .social-media i:hover {
@@ -356,31 +363,34 @@ section .container {
 
 
 /* footer */
-.footer{
+.footer {
     padding: 5rem;
 }
-.footer .f-part1{
+
+.footer .f-part1 {
     padding: 2rem;
 }
 
-.f-part1 h4{
+.f-part1 h4 {
     font-weight: 900;
     color: #692705;
 }
-.f-part1 p{
-   padding-top: 0.4rem;
-   font-size: 0.9rem;
+
+.f-part1 p {
+    padding-top: 0.4rem;
+    font-size: 0.9rem;
 }
 
-.footer .f-part2{
+.footer .f-part2 {
     padding: 2rem;
 }
 
-.f-part2 h4{
+.f-part2 h4 {
     font-weight: 900;
     color: #692705;
 }
-.f-part2 a{
+
+.f-part2 a {
     padding-bottom: 0.3rem;
     text-decoration: none;
     color: #343a40;

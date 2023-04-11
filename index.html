@@ -22,7 +22,7 @@
 
     <!-- navbar -->
     <header>
-        <nav class="navbar navbar-expand-lg ">
+        <nav class="navbar navbar-expand-lg fixed-top">
             <div class="container nav-menu">
                 <a class="logo" aria-current="page" href="index.html"><span class="logo-s">WOOD</span>wall</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -32,11 +32,10 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav ms-auto">
-                        <a class="nav-link active px-3" aria-current="page" href="index.html">Home</a>
-                        <a class="nav-link px-3" href="services.html">Services</a>
-                        <a class="nav-link px-3" href="request.html">Request</a>
-                        <a class="nav-link px-3" href="about.html">About</a>
-                        <a class="nav-link" href="contact.html">Contact</a>
+                        <a class="nav-link active px-md-3" aria-current="page" href="index.html">Home</a>
+                        <a class="nav-link px-md-3" href="#services">Services</a>
+                        <a class="nav-link px-md-3" href="#about">About</a>
+                        <a class="nav-link" href="#contact">Contact</a>
                     </div>
                 </div>
             </div>
@@ -59,7 +58,7 @@
 
 
     <!-- about -->
-    <div class="container about">
+    <div class="container about" id="about">
         <div class="row">
             <div class="col-md-4 col-lg-4 col-sm-12 about-content">
                 <div class="icon">
@@ -88,7 +87,7 @@
 
 
     <!-- services -->
-    <div class="container-fluid  services bg-white">
+    <div class="container-fluid  services bg-white" id="services">
         <h6>services</h6>
         <h1>What we Offer</h1>
         <p>Choose The Service Package That Suits Your Needs</p>
@@ -220,7 +219,7 @@
 
     <!-- Contact -->
 
-    <div class="container-fluid  bg-white contact">
+    <div class="container-fluid  bg-white contact" id="contact">
         <h6>Contact Us</h6>
         <h1>Get In Touch Using The Form</h1>
         <a href="mailto:info.woodwalldesk.com">info.woodwalldesk.com</a>
@@ -270,7 +269,8 @@
             <div class="row">
                 <div class="col-md-6 f-part1">
                     <h4>Few Words About WOODwall</h4>
-                    <p class="mb-0">We are constantly seeking to exceed our previous best, with creativity and imagination. By
+                    <p class="mb-0">We are constantly seeking to exceed our previous best, with creativity and
+                        imagination. By
                         challenging the way we see and to things, it leads to fresh perspectives and new ideas that
                         inspire business innovation drive sustainable efficiencies and deliver superior product
                         offerings.</p>
@@ -342,13 +342,10 @@
             setTimeout(() => {
                 text.textContent = "Corporate Space";
             }, 12000);
-            setTimeout(() => {
-                text.textContent = "Anything You Want";
-            }, 16000);
 
         }
         textload();
-        setInterval(textload, 20000);
+        setInterval(textload, 16000);
 
     </script>
     <script>
